@@ -262,10 +262,10 @@ if ( ! class_exists( 'Stars_Rating' ) ) :
 			$rating_stat = $this->rating_stat();
 
 			if ( $rating_stat ) {
-				echo '<div class="stars-avg-rating">';
-				echo $this->rating_stars( $rating_stat['avg'] );
-				echo $rating_stat['avg'] . ' ' . esc_html__( 'based on', 'stars-rating' ) . ' ' . $rating_stat['count'] . ' ' . esc_html__( 'reviews', 'stars-rating' );
-				echo '</div>';
+				// echo '<div class="stars-avg-rating">';
+				// echo $this->rating_stars( $rating_stat['avg'] );
+				// echo $rating_stat['avg'] . ' ' . esc_html__( 'based on', 'stars-rating' ) . ' ' . $rating_stat['count'] . ' ' . esc_html__( 'reviews', 'stars-rating' );
+				// echo '</div>';
 			}
 		}
 
@@ -309,12 +309,12 @@ if ( ! class_exists( 'Stars_Rating' ) ) :
 				$output      = '<span class="rating-stars">';
 
 				for ( $count = 1; $count <= $rating; $count ++ ) {
-					$output .= "<i class='fa fa-star rated'></i>";
+					$output .= "<i class='fas fa-star rated'></i>";
 				}
 
 				$unrated = 5 - $rating;
 				for ( $count = 1; $count <= $unrated; $count ++ ) {
-					$output .= "<i class='fa fa-star-o'></i>";
+					$output .= "<i class='far fa-star'></i>";
 				}
 
 				$output .= '</span>';
